@@ -1,0 +1,15 @@
+{
+    "version": 3,
+    "mappings": "AMAA,AAAA,CAAC,EAAE,CAAC,AAAA,OAAO,EAAE,CAAC,AAAA,MAAM,CAAC;EACnB,UAAU,EAAE,UAAU;CAAG;;AAC3B,AAAA,IAAI,CAAC;EACH,SAAS,EAAE,IAAI;CAAG",
+    "sources": [
+        "../sass/style.sass",
+        "../sass/_fonts.sass",
+        "../sass/_normalize.sass",
+        "../sass/_variables.sass",
+        "../sass/_interface.sass",
+        "../sass/_grid.sass",
+        "../sass/_settings.sass"
+    ],
+    "names": [],
+    "file": "style.css"
+}
