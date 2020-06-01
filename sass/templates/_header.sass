@@ -1,0 +1,53 @@
+.menu
+  display: flex
+  justify-content: space-between
+  align-items: center
+  margin: auto
+  padding-top: 8.7rem
+  padding-bottom: 5.5rem
+  width: 90%
+  max-width: 169rem
+.logo
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  align-items: center
+  width: 30.6rem
+  &__text
+    display: block
+    margin-bottom: 0.4rem
+    letter-spacing: 0.2rem
+    font-family: 'Myriad Pro Regular', sans-serif
+    font-size: 3.6rem
+    color: $light
+    &--small
+      font-size: 1.6rem
+      color: $secondary
+.nav
+  display: flex
+  justify-content: space-between
+  align-items: center
+  width: 66.3rem    
+  &__item
+    position: relative
+    font-family: 'Open Sans', sans-serif
+    font-size: 1.6rem
+    line-height: 2.8rem
+    color: $secondary  
+    text-decoration: none
+    cursor: pointer
+    &::after
+      position: absolute
+      display: none
+      content: ''
+      margin-top: 1.2rem
+      width: 100%
+      height: 0.2rem
+      background-color: $light
+    &:hover
+      color: $light
+      &::after
+        display: block  
+      
+
+  
