@@ -1,9 +1,35 @@
+@media screen and ( max-width: 1250px  )
+  .col-4
+    flex-basis: 21%
+  .person
+    &__text
+      font-size: 1.4rem  
 @media screen and ( max-width: 1200px  )
   .menu__logo
     width: 6rem
     margin-right: 2rem
   .logo__company
     display: none
+@media screen and ( max-width: 1090px  )
+  .col-4
+    flex-basis: 24%
+  .person
+    &__text
+      font-size: 1.4rem     
+@media screen and ( max-width: 992px  )   
+  .row
+    flex-wrap: wrap
+  .col-4
+    flex-basis: 100%
+  .clients
+    padding-top: 3.6rem
+    &__title
+      margin-bottom: 4.6rem
+    &__person
+      margin-bottom: 3rem  
+      padding-bottom: 1.5rem
+      border-bottom: $secondary solid 1px
+
 @media screen and ( max-width: 700px  )
   .logo
     display: none
