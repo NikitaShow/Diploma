@@ -330,6 +330,40 @@ template {
 [hidden] {
   display: none; }
 
+.car-icon {
+  position: relative;
+  display: inline-block;
+  padding: 1.7rem 1.6rem 1.3rem 1.8rem;
+  border: 1px solid #444;
+  border-radius: 50%; }
+  .car-icon__auto-equipment {
+    position: relative;
+    margin-right: 3.6rem; }
+    .car-icon__auto-equipment--first::after {
+      position: absolute;
+      top: 0.7rem;
+      right: -2.1rem;
+      content: '5';
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 600;
+      font-size: 2.4rem;
+      line-height: 3.6rem;
+      color: #fff; }
+    .car-icon__auto-equipment--second {
+      margin-right: 4.2rem; }
+      .car-icon__auto-equipment--second::after {
+        position: absolute;
+        top: 0.7rem;
+        right: -2.4rem;
+        content: '4';
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+        font-size: 2.4rem;
+        line-height: 3.6rem;
+        color: #fff; }
+  .car-icon__like {
+    margin-bottom: 3.6rem; }
+
 .container {
   width: 85%;
   max-width: 1100px;
@@ -343,7 +377,7 @@ template {
   flex-basis: 19%; }
 
 .col-3 {
-  flex-basis: 33%; }
+  flex-basis: 28%; }
 
 *, *:before, *:after {
   box-sizing: border-box; }
@@ -462,7 +496,7 @@ p {
 
 .clients {
   padding-top: 13.5rem;
-  padding-bottom: 15.4rem; }
+  padding-bottom: 15rem; }
 
 .clients__title {
   text-align: center;
@@ -520,7 +554,7 @@ p {
   position: relative;
   background: url("../img/hero_bg_ps.jpg") no-repeat center/cover;
   height: 100vh;
-  padding-top: 20.1rem;
+  padding-top: 20.6rem;
   padding-bottom: 10.8rem; }
   .auto::before {
     position: absolute;
@@ -528,25 +562,41 @@ p {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%; }
+    height: 100%;
+    background-color: rgba(22, 22, 22, 0.9); }
 
-.auto-approach__title {
-  margin-bottom: 8.3rem;
-  font-family: 'Istok Web', sans-serif;
-  font-weight: 700;
-  font-size: 8.4rem;
-  line-height: 8.4rem;
-  color: #fff; }
-  .auto-approach__title--small {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 600;
-    font-size: 2.4rem;
-    line-height: 3.6rem; }
+.auto-approach {
+  position: relative; }
+  .auto-approach__type {
+    margin-bottom: 4.5rem;
+    padding: 25px 50px 36px 37px; }
+  .auto-approach__title {
+    margin-bottom: 8.3rem;
+    font-family: 'Istok Web', sans-serif;
+    font-weight: 700;
+    font-size: 8.4rem;
+    line-height: 5.8rem;
+    letter-spacing: -3.5px;
+    color: #fff; }
+    .auto-approach__title--small {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 600;
+      font-size: 2.4rem;
+      line-height: 3.6rem;
+      letter-spacing: 0; }
+  .auto-approach__mileage {
+    padding: 22px 62px 36px 37px; }
 
 .transmission {
+  position: relative;
   display: flex;
   justify-content: space-between;
   width: 23.3rem; }
+  .transmission::after {
+    position: absolute;
+    top: -4px;
+    left: -18px;
+    content: url("../img/small-border.png"); }
   .transmission__title {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
@@ -554,16 +604,19 @@ p {
     line-height: 2.4rem;
     color: #fff; }
   .transmission__scheme {
-    margin-bottom: 5.1rem; }
+    margin-bottom: 4.3rem;
+    padding-top: 1.04rem;
+    padding-left: 1.2rem; }
 
 .transmission-step__automat {
+  padding-right: 1.2rem;
   font-family: 'Istok Web', sans-serif;
   font-weight: 700;
   font-size: 3.6rem;
-  line-height: 4.8rem;
   color: #fff; }
 
 .transmission-step__count {
+  padding-right: 1.2rem;
   text-align: right;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
@@ -571,8 +624,140 @@ p {
   line-height: 2.4rem;
   color: #777; }
 
-.auto-approach__type {
-  margin-bottom: 4.5rem; }
+.mileage {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 23.3rem; }
+  .mileage::after {
+    position: absolute;
+    top: -9px;
+    left: -18px;
+    content: url("../img/small-border2.png"); }
+  .mileage__top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; }
+  .mileage__title {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.3rem;
+    line-height: 2.4rem;
+    color: #fff; }
+  .mileage__scheme {
+    padding-bottom: 12px; }
+  .mileage__count {
+    padding-top: 3.5rem;
+    padding-left: 3.4rem; }
+  .mileage__killometers {
+    font-family: 'Istok Web', sans-serif;
+    font-weight: 700;
+    font-size: 3.6rem;
+    color: #fff; }
+  .mileage__year {
+    padding-right: 0.4rem;
+    text-align: right;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.3rem;
+    line-height: 2.4rem;
+    color: #777; }
+
+.fuel__mark {
+  position: relative;
+  display: inline-block;
+  font-family: 'Istok Web', sans-serif;
+  font-weight: 700;
+  font-size: 8.4rem;
+  line-height: 5.8rem;
+  letter-spacing: -3.5px;
+  color: #fff; }
+  .fuel__mark::after {
+    position: absolute;
+    top: 0.2rem;
+    right: -6rem;
+    content: url("../img/cross.png"); }
+
+.fuel__mark-number {
+  position: absolute;
+  top: 0.3rem;
+  right: -6.1rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 2.4rem;
+  color: #17bebb; }
+
+.auto-engine {
+  position: relative;
+  padding-top: 10.4rem; }
+  .auto-engine__fuel {
+    margin-bottom: 3.7rem; }
+  .auto-engine__characteristic {
+    margin-bottom: 6.8rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+    color: #fff; }
+
+.engine-document__car-icon {
+  margin-bottom: 3.4rem; }
+
+.engine-document__text {
+  max-width: 20.3rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+  color: #fff; }
+  .engine-document__text--primary {
+    color: #ff6600; }
+
+.auto-equipment {
+  position: relative;
+  padding-top: 10.4rem; }
+  .auto-equipment__year {
+    display: inline-block;
+    font-family: 'Istok Web', sans-serif;
+    font-weight: 700;
+    font-size: 8.4rem;
+    line-height: 5.8rem;
+    letter-spacing: -3.5px;
+    color: #fff; }
+  .auto-equipment__list {
+    margin-bottom: 9rem; }
+  .auto-equipment-text__title {
+    margin-bottom: 1.6rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+    color: #fff; }
+  .auto-equipment-text__descriprtion {
+    max-width: 25rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.38rem;
+    line-height: 2.4rem;
+    color: #777; }
+
+.auto-year {
+  position: relative;
+  margin-bottom: 4.6rem; }
+  .auto-year__date {
+    position: absolute;
+    top: 0.1rem;
+    right: -8.9rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 2.4rem;
+    letter-spacing: 1px;
+    color: #17bebb; }
+
+@media screen and (max-width: 1350px) {
+  .auto-approach {
+    padding-left: 3rem; } }
 
 @media screen and (max-width: 1250px) {
   .col-4 {
@@ -591,13 +776,15 @@ p {
   .col-4 {
     flex-basis: 24%; }
   .person__text {
-    font-size: 1.4rem; } }
+    font-size: 1.4rem; }
+  .col-3 {
+    flex-basis: 32%; } }
 
 @media screen and (max-width: 992px) {
   .row {
     flex-wrap: wrap; }
   .col-4 {
-    flex-basis: 100%; }
+    flex-basis: 98%; }
   .clients {
     padding-top: 3.6rem; }
     .clients__title {
@@ -605,7 +792,34 @@ p {
     .clients__person {
       margin-bottom: 3rem;
       padding-bottom: 1.5rem;
-      border-bottom: #ddd solid 1px; } }
+      border-bottom: #ddd solid 1px; }
+  .auto {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 5.5rem;
+    height: 100%;
+    background: #222222; }
+    .auto::before {
+      display: none; }
+  .auto-approach {
+    display: none; }
+  .auto-engine {
+    padding-top: 0; }
+    .auto-engine__characteristic {
+      margin-bottom: 3rem; }
+  .engine-document__text {
+    max-width: 100%; }
+  .auto-equipment {
+    padding-top: 5rem; }
+    .auto-equipment__list {
+      margin-bottom: 3.5rem; }
+  .auto-equipment-text__descriprtion {
+    max-width: 100%; }
+  .auto-year__date {
+    right: -6.9rem; }
+  .col-3 {
+    flex-basis: 100%; } }
 
 @media screen and (max-width: 700px) {
   .logo {
@@ -652,7 +866,10 @@ p {
 
 @media screen and (max-height: 900px) {
   .intro__title {
-    margin-bottom: 8.6rem; } }
+    margin-bottom: 8.6rem; }
+  .auto {
+    height: 100%;
+    background: #222222; } }
 
 @media screen and (max-height: 670px) {
   .intro__title {

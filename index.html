@@ -167,14 +167,13 @@
         <div class="row">
           <div class="col-3">
             <div class="auto-approach">
-              <p class="auto-approach__title">Авто<br/> <span  class="auto-approach__title--small">в приближении</span></p>
+              <p class="auto-approach__title">Авто<br /> <span class="auto-approach__title--small">в приближении</span>
+              </p>
               <div class="transmission auto-approach__type">
-                <p class="transmission__title">Коробка<br/> передач</p>
+                <p class="transmission__title">Коробка<br /> передач</p>
                 <!-- /.transmission__title -->
                 <div class="transmission__description">
-                  <div class="transmission__scheme">
-                    <img src="img/scheme.svg" alt="transmission scheme">
-                  </div>
+                  <img class="transmission__scheme" src="img/scheme.svg" alt="transmission scheme">
                   <!-- /.transmission__scheme -->
                   <div class="transmission-step transmission__step">
                     <p class="transmission-step__automat">AT</p>
@@ -184,14 +183,14 @@
                 </div>
                 <!-- /.transmission__description -->
               </div>
-              <div class="mileage auto-approach__type">
-                <div class="mileage__title">Чистый пробег</div>
-                <div class="mileage__scheme">
-                  <img src="img/mileage.svg" alt="mileage scheme">
+              <div class="mileage auto-approach__mileage">
+                <div class="mileage__top">
+                  <div class="mileage__title">Чистый<br />пробег</div>
+                  <img class="mileage__scheme" src="img/mileage.svg" alt="mileage scheme">
                 </div>
                 <div class="mileage__count">
-                  <p>+100K</p>
-                  <P>2020 г.</P>
+                  <p class="mileage__killometers">+100K</p>
+                  <P class="mileage__year">2020 г.</P>
                 </div>
               </div>
             </div>
@@ -201,16 +200,17 @@
           <div class="col-3">
             <div class="auto-engine">
               <div class="fuel auto-engine__fuel">
-                <p>АИ</p>
-                <p>92</p>
+                <p class=fuel__mark>АИ<sup class="fuel__mark-number">92</sup></p>
               </div>
               <!-- /.fuel auto-engine__fuel -->
               <div class="engine-characteristic auto-engine__characteristic">Мощность: 123<br /> Объем: 1.6<br />
                 Расход: 8.9 / 5.3<br /></div>
               <!-- /.engine-characteristic auto-engine__characteristic -->
               <div class="engine-document auto-engine__document">
-                <img src="img/document.png" alt="document">
-                <p>Все документы в порядке - единственный собственник за весь период эксплуатации. Сел и поехал!</p>
+                <div class="car-icon engine-document__car-icon">
+                   <img src="img/document.png" alt="document">
+                  </div>
+                <p class="engine-document-text engine-document__text">Все документы в порядке - единственный собственник за весь период эксплуатации. <span class="engine-document__text--primary">Сел и поехал!</span></p>
               </div>
               <!-- /.engine-document auto-engine__document -->
             </div>
@@ -219,17 +219,18 @@
           <!-- /.col-3 -->
           <div class="col-3">
             <div class="auto-equipment">
-              <div class="auto-year auto-equipment__year">
-                <p>2017</p>
-              </div>
+                <p class="auto-year auto-equipment__year">2017<sup class="auto-year__date">Н.В.</sup></p>
               <!-- /.auto-year auto-equipment__year -->
               <div class="auto-equipment-list auto-equipment__list">
-                <img src="img/peolpe.png" alt="people">
-                <img src="img/door.png" alt="door">
-                <img src="img/snow.png" alt="snow">
+                <div class="car-icon car-icon__auto-equipment car-icon__auto-equipment--first"><img src="img/peolpe.png" alt="people"></div>
+                <div class="car-icon car-icon__auto-equipment car-icon__auto-equipment--second"><img src="img/door.png" alt="door"></div>
+                <div class="car-icon"><img src="img/snow.png" alt="snow"></div>
               </div>
               <!-- /.auto-equipment-list auto-equipment__list -->
               <div class="auto-equipment-text auto-equipment__text">
+                <div class="car-icon car-icon__like">
+                  <img src="img/like.png" alt="snow"></div>
+              </div>
                 <p class="auto-equipment-text__title">Укомплектуем дополнительно</p>
                 <!-- /.auto-equipment-text__title -->
                 <p class="auto-equipment-text__descriprtion">

@@ -1,3 +1,6 @@
+@media screen and ( max-width: 1350px  )
+  .auto-approach
+    padding-left: 3rem
 @media screen and ( max-width: 1250px  )
   .col-4
     flex-basis: 21%
@@ -16,11 +19,13 @@
   .person
     &__text
       font-size: 1.4rem     
+  .col-3
+    flex-basis: 32%    
 @media screen and ( max-width: 992px  )   
   .row
     flex-wrap: wrap
   .col-4
-    flex-basis: 100%
+    flex-basis: 98%
   .clients
     padding-top: 3.6rem
     &__title
@@ -29,7 +34,36 @@
       margin-bottom: 3rem  
       padding-bottom: 1.5rem
       border-bottom: $secondary solid 1px
-
+  .auto
+    display: flex
+    justify-content: center
+    text-align: center
+    padding-top: 5.5rem
+    height: 100%
+    background: #222222
+    &::before
+      display: none   
+  .auto-approach
+    display: none
+  .auto-engine
+    padding-top: 0
+    &__characteristic
+      margin-bottom: 3rem      
+  .engine-document
+    &__text
+      max-width: 100%    
+  .auto-equipment
+    padding-top: 5rem  
+    &__list
+      margin-bottom: 3.5rem
+  .auto-equipment-text
+    &__descriprtion
+      max-width: 100%  
+  .auto-year
+    &__date
+      right: -6.9rem    
+  .col-3
+    flex-basis: 100%       
 @media screen and ( max-width: 700px  )
   .logo
     display: none
@@ -80,6 +114,9 @@
   .intro
     &__title
       margin-bottom: 8.6rem
+  .auto
+    height: 100%
+    background: #222222
 @media screen and ( max-height: 670px  )  
   .intro
     &__title
