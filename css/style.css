@@ -938,6 +938,9 @@ p {
     text-decoration: underline;
     cursor: pointer; }
 
+.social {
+  position: relative; }
+
 .social__link {
   display: inline-block;
   margin-right: 15px; }
@@ -947,10 +950,6 @@ p {
   fill: #444; }
   .footer-icon:hover {
     fill: #17bebb; }
-
-.footer-circle {
-  stroke: #000;
-  stroke-width: 1; }
 
 @media screen and (max-width: 1450px) {
   .col-2 {
