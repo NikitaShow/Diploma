@@ -8,8 +8,21 @@
 .col-4
   flex-basis: 19%  
 .col-2
+  position: relative
   width: 30%   
   &--big
+    top: 6px
+    left: -12rem
     width: 63.7% 
 .col-3
   flex-basis: 28%  
+.col-3_1
+  width: 28%    
+  &--big
+    position: relative
+    width: 43%
+    &::after
+      position: absolute
+      top: -2.9rem
+      left: -4.9rem
+      content: url('../img/border-footer.png')

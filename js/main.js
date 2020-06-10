@@ -4,18 +4,18 @@ $(document).ready(function () {
     // Optional parameters
     loop: true,
     pagination: {
-      el: '.swiper-pagination',
+      el: this.querySelector ('.swiper-pagination'),
       type: 'fraction',
     },
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     }
-  })
+  });
+  var mySwiper = new Swiper('.swiper-container', {
+    loop: true,
+  });
 });
-var mySwiper = new Swiper('.swiper-container', {
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-});
+
+
+
