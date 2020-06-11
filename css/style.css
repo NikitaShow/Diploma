@@ -942,14 +942,37 @@ p {
   position: relative; }
 
 .social__link {
+  position: relative;
   display: inline-block;
   margin-right: 15px; }
 
 .footer-icon {
+  position: relative;
   display: inline-block;
+  border: 1px solid #444;
+  border-radius: 50%;
   fill: #444; }
   .footer-icon:hover {
-    fill: #17bebb; }
+    fill: #17bebb;
+    border-color: #17bebb; }
+
+.swiper-container1 {
+  overflow: hidden;
+  width: 97%; }
+
+.pag-2 {
+  bottom: 11.2rem;
+  left: 12.5rem; }
+
+.prev-2 {
+  top: 11.1rem;
+  left: 35.7rem;
+  background: url("../img/arrow-icon-prev2.png") no-repeat center; }
+
+.next-2 {
+  top: 11.1rem;
+  left: 39.6rem;
+  background: url("../img/arrow-icon-next2.png") no-repeat center; }
 
 @media screen and (max-width: 1450px) {
   .col-2 {
