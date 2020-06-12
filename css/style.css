@@ -961,8 +961,18 @@ p {
   width: 97%; }
 
 .pag-2 {
-  bottom: 11.2rem;
-  left: 12.5rem; }
+  bottom: 12.2rem;
+  left: 13rem;
+  color: #777; }
+
+.pag-2 .swiper-pagination-total {
+  top: -1.05rem;
+  left: 19.3rem; }
+
+.pag-2 .swiper-pagination-current {
+  top: -1rem;
+  left: 27.5rem;
+  color: #fff; }
 
 .prev-2 {
   top: 11.1rem;
