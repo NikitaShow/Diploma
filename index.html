@@ -45,7 +45,7 @@
           <h2 class="title__secondary">Ставропольский край<br /> как на ладони</h2>
         </div>
         <!-- /.title -->
-        <div class="subtitile intro__subtitle">
+        <div class="subtitle intro__subtitle">
           <strong class="subtitle__main">Красоты Ставрополья</strong>
           <span class="subtitle__secondary">Надежный автомобиль — залог лучших впечатлений!</span>
         </div>
@@ -59,8 +59,56 @@
   <main>
     <section class="tours">
       <div class="container">
-        <div class="tours__video video">
+        <div class=" video tours__video">
+          <div class="main-video video__main-video">
+            <img src="img/play.png" alt="play" class="main-video__play">
+            <img src="img/bigplay.png" alt="bigplay" class="main-video__bigplay">
+          </div>
+          <!-- /.main-video -->
         </div>
+        <div class="row">
+          <div class="about-video">
+            <p class="about-video__text">
+              Интересные места Ставропольского края <span class="about-video__text--primary">эксклюзивно для вас!</span>
+            </p>
+            <!-- /.video__text -->
+            <a href="#" class="about-video__link">Все видео <img src="img/allVideo.png" alt="allVideo"
+                class="about-video__camera"></a>
+          </div>
+          <!-- /.about-video -->
+          <div class="slider tours__slider">
+            <!-- Slider main container -->
+            <div class="swiper-container2">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <div class="slide-video">
+                    <img src="img/slideVideo.jpg" alt="slideVideo" class="slide-video__background">
+                    <img src="img/play.png" alt="videoplay" class="slide-video__play">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="slide-video">
+                    <img src="img/slideVideo.jpg" alt="slideVideo" class="slide-video__background">
+                    <img src="img/play.png" alt="videoplay" class="slide-video__play">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="slide-video">
+                    <img src="img/slideVideo.jpg" alt="slideVideo" class="slide-video__background">
+                    <img src="img/play.png" alt="videoplay" class="slide-video__play">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev3"></div>
+            <div class="swiper-button-next3"></div>
+          </div>
+          <!-- /.slider tours-slider -->
+        </div>
+        <!-- /.row -->
       </div>
       <!-- /.container -->
     </section>
@@ -435,9 +483,9 @@
         <div class="col-3_1">
           <div class="information requisites footer__requisites footer__requisites--left">
             <h3 class="information__title">Контакты</h3>
-          <a class="information__text information__link">ИП Пупкин Василий</a>
-          <a class="information__text information__link">ОГРН: 1053601053600</a>
-          <a class="information__text information__link">ИНН: 36640336640</a>
+            <a class="information__text information__link">ИП Пупкин Василий</a>
+            <a class="information__text information__link">ОГРН: 1053601053600</a>
+            <a class="information__text information__link">ИНН: 36640336640</a>
           </div>
         </div>
         <div class="col-3_1--big">
@@ -449,25 +497,29 @@
               <div class="swiper-slide">
                 <div class="footer-slider">
                   <p class="footer-slider__title">А как осуществляется доставка и сдача автомобиля?</p>
-                  <p class="footer-slider__text">Доставка и сдача в аэропорт Минеральных Вод <span class="footer-slider__text--light">бесплатная!</span></p>
+                  <p class="footer-slider__text">Доставка и сдача в аэропорт Минеральных Вод <span
+                      class="footer-slider__text--light">бесплатная!</span></p>
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="footer-slider">
                   <p class="footer-slider__title">А как осуществляется доставка и сдача автомобиля?</p>
-                  <p class="footer-slider__text">Доставка и сдача в аэропорт Минеральных Вод <span class="footer-slider__text--light">бесплатная!</span></p>
+                  <p class="footer-slider__text">Доставка и сдача в аэропорт Минеральных Вод <span
+                      class="footer-slider__text--light">бесплатная!</span></p>
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="footer-slider">
                   <p class="footer-slider__title">А как осуществляется доставка и сдача автомобиля?</p>
-                  <p class="footer-slider__text">Доставка и сдача в аэропорт Минеральных Вод <span class="footer-slider__text--light">бесплатная!</span></p>
+                  <p class="footer-slider__text">Доставка и сдача в аэропорт Минеральных Вод <span
+                      class="footer-slider__text--light">бесплатная!</span></p>
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="footer-slider">
                   <p class="footer-slider__title">А как осуществляется доставка и сдача автомобиля?</p>
-                  <p class="footer-slider__text">Доставка и сдача в аэропорт Минеральных Вод <span class="footer-slider__text--light">бесплатная!</span></p>
+                  <p class="footer-slider__text">Доставка и сдача в аэропорт Минеральных Вод <span
+                      class="footer-slider__text--light">бесплатная!</span></p>
                 </div>
               </div>
             </div>
@@ -485,7 +537,7 @@
       <div class="row">
         <div class="social footer__social">
           <a href="#" class="link social__link">
-            <svg class="footer-icon" fill="none" width="20" height="20" >
+            <svg class="footer-icon" fill="none" width="20" height="20">
               <use xlink:href='img/sprite.svg#vk' />
             </svg>
           </a> <!-- /.social-link -->

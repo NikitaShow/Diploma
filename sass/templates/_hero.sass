@@ -1,9 +1,11 @@
 .hero
+  margin-top: -17rem
   background: url('../img/hero_bg_ps.jpg') no-repeat center/ cover
   height: 100vh
 .intro
+  position: relative
   &__title
-    margin-bottom: 24.5rem
+    margin-bottom: 24rem
   &__subtitle
     margin-bottom: 13.2rem  
 .title
@@ -26,8 +28,13 @@
     letter-spacing: 0.2rem
     color: $secondary  
 .subtitle
+  position: relative
+  display: flex
+  flex-direction: column
+  max-width: 36.8rem
+  z-index: 5
   &__main
-    display: block
+    display: inline-block
     margin-bottom: 2.3rem
     font-family: 'Istok Web', sans-serif
     font-weight: 700
@@ -35,7 +42,7 @@
     letter-spacing: -1.4px 
     color: $light
   &__secondary
-    display: block
+    display: inline-block
     font-family: 'Open Sans', sans-serif
     font-weight: 600
     font-size: 1.3rem

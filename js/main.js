@@ -26,6 +26,16 @@ $(document).ready(function () {
       prevEl: '.swiper-button-prev',
     }
   });
+  var mySwiper = new Swiper ('.swiper-container2', {
+    // Optional parameters
+    slidesPerView: 2,
+    spaceBetween: 90,
+    loop: true,
+    navigation: {
+      nextEl: this.querySelector('.swiper-button-next3'),
+      prevEl: this.querySelector('.swiper-button-prev3'),
+    }
+  });
 });
 
 
