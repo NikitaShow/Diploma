@@ -1,3 +1,6 @@
+.tours
+  background: linear-gradient(to bottom, transparent 28%, #f7f4f2 28%)
+  padding-bottom: 19.8rem
 .video
   &__main-video
     position: relative
@@ -7,6 +10,7 @@
     margin: auto
     margin-top: -29.8rem
     margin-bottom: 13.3rem  
+    width: 85%
     max-width: 90rem
     min-height: 50.6rem
     z-index: 4
@@ -58,6 +62,9 @@
   overflow: hidden    
 .slide-video
   position: relative
+  display: flex
+  justify-content: center
+  align-items: center
   width: 30.6rem
   height: 17.2rem
   cursor: pointer
@@ -68,8 +75,6 @@
     object-position: center
   &__play
     position: absolute
-    top: 4.1rem 
-    left: 10.8rem
   &:hover
     &::before
       content: ''
